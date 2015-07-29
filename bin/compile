@@ -56,11 +56,11 @@ for BUILDPACK in $(cat $1/.buildpacks); do
 
     if [ $? == 0 ]; then
       echo "=====> Detected Framework: $framework"
-      echo "-----> Compiling with BUILD_DIR: $1, SUB_DIR: $subdir"
-      echo "-----> Ls BUILD_DIR: $(ls -la $1)"
-      echo "-----> Ls \$3: $(ls -la $3)"
-      echo "-----> Ls \$2: $(ls -la $2)"
-      echo "-----> Ls SUB_DIR(\$1/\$subdir): $(ls -la $1/$subdir)"
+      # echo "-----> Compiling with BUILD_DIR: $1, SUB_DIR: $subdir"
+      # echo "-----> Ls BUILD_DIR: $(ls -la $1)"
+      # echo "-----> Ls \$3: $(ls -la $3)"
+      # echo "-----> Ls \$2: $(ls -la $2)"
+      # echo "-----> Ls SUB_DIR(\$1/\$subdir): $(ls -la $1/$subdir)"
       # bin/compile BUILD_DIR CACHE_DIR ENV_DIR
       $dir/bin/compile $1/$subdir $2 $3 
 
